@@ -188,10 +188,30 @@ header .navs:hover {
   background-color: lightgray;
   border: 2px solid black;
   font-size: 4rem;
-  margin-top: 10px;
+  margin: 10px 0px 40px 0px;
   border-radius: 10px;
 }
 .top-content button:hover {
   background-color: black;
   color: lightgray;
+}
+.middle-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+.middle-content h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.middle-content .middle-text-container {
+  width: 50%;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+.middle-content p,
+.middle-content li {
+  font-size: 15px;
+  list-style-type: square;
+  list-style-position: inside;
 }
