@@ -1,1 +1,331 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.bordered {
+  border-top: 0.5px solid slategray;
+  border-bottom: 0.5px solid slategray;
+  width: 100%;
+}
+.base-content-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+@media (max-width: 500px) {
+  header {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
+header nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+header .navs {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0px 14px;
+}
+@media (max-width: 500px) {
+  header .navs {
+    font-size: 20px;
+    padding: 5px 0px;
+    border-bottom: 0.5px solid darkgray;
+    width: 100%;
+  }
+}
+header .navs:hover {
+  color: white;
+  background-color: black;
+}
+.top-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .top-content {
+    align-items: center;
+  }
+}
+.top-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    width: 80%;
+    height: auto;
+  }
+}
+.top-content h1 {
+  font-size: 45px;
+  padding: 10px 0px;
+}
+@media (max-width: 500px) {
+  .top-content h1 {
+    text-align: center;
+  }
+}
+.top-content p {
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.top-content hr {
+  border-top: 0.5px solid slategray;
+  border-bottom: 0.5px solid slategray;
+  width: 100%;
+}
+.top-content button {
+  width: 25rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: lightgray;
+  border: 2px solid black;
+  font-size: 4rem;
+  margin: 10px 0px 40px 0px;
+  border-radius: 10px;
+}
+.top-content button:hover {
+  background-color: black;
+  color: lightgray;
+}
+.middle-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+  margin: 40px 20px 40px 20px;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+  }
+}
+.middle-content h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.middle-content .middle-text-container {
+  width: 50%;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+@media (max-width: 500px) {
+  .middle-content .middle-text-container {
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
+.middle-content p,
+.middle-content li {
+  font-size: 15px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bottom-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.bottom-content h3 {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+.bottom-content .bottom-text-container {
+  width: 100%;
+}
+.bottom-content .bottom-text-container a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px dotted black;
+}
+.bottom-content p {
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  padding: 20px 0px;
+}
+footer h3 {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+footer p {
+  font-size: 15px;
+  padding: 5px 0px;
+}
