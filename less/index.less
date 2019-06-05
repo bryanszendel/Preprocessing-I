@@ -30,10 +30,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-html {
-	background: lightgray;
-}
-
 body {
 	line-height: 1;
 }
@@ -59,6 +55,96 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+// VARIABLES
+
+@navsize: 18px;
+@navcolor: black;
+@navpadding: 0px 14px;
+@font-family: Arial, Helvetica, sans-serif;
+
+
+// MIXINS
+
+
+
+// BODY
+html, body {
+	font-family: @font-family;
+}
+
+// CONTAINER
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	border: 1px dashed black;
+}
+
+// HEADER
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px 0px;
+
+	.navs {
+		text-decoration: none;
+		color: @navcolor;
+		font-size: @navsize;
+		padding: @navpadding;
+	}
+
+	.navs:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+// TOP CONTENT
+
+.top-content {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin: 20px;
+
+	img {
+		width: 300px;
+		height: 300px;
+		border-radius: 100px;
+	}
+
+	h1 {
+		font-size: 45px;
+		padding: 10px 0px;
+	}
+
+	p {
+		font-size: 18px;
+		padding: 10px 0px;
+	}
+
+	hr {
+		border-top: .5px solid slategray;
+		border-bottom: .5px solid slategray;
+		width: 100%;
+	}
+
+	button {
+		width: 25rem;
+		background-color: lightgray;
+		border: 2px solid black;
+		font-size: 4rem;
+		margin-top: 10px;
+		border-radius: 10px;
+	}
+
+	button:hover {
+		background-color: black;
+		color: lightgray;
+	}
+}

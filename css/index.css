@@ -104,9 +104,6 @@ nav,
 section {
   display: block;
 }
-html {
-  background: lightgray;
-}
 body {
   line-height: 1;
 }
@@ -136,4 +133,65 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px dashed black;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+header .navs {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0px 14px;
+}
+header .navs:hover {
+  color: white;
+  background-color: black;
+}
+.top-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px;
+}
+.top-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+}
+.top-content h1 {
+  font-size: 45px;
+  padding: 10px 0px;
+}
+.top-content p {
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.top-content hr {
+  border-top: 0.5px solid slategray;
+  border-bottom: 0.5px solid slategray;
+  width: 100%;
+}
+.top-content button {
+  width: 25rem;
+  background-color: lightgray;
+  border: 2px solid black;
+  font-size: 4rem;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.top-content button:hover {
+  background-color: black;
+  color: lightgray;
 }
