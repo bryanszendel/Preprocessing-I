@@ -111,6 +111,18 @@ header {
 		align-items: center;
 		justify-content: flex-start;
 		flex-direction: column;
+		margin-top: 0px;
+	}
+
+	nav {
+		display: flex;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.navs {
@@ -118,6 +130,13 @@ header {
 		color: @navcolor;
 		font-size: @navsize;
 		padding: @navpadding;
+
+		@media (max-width: 500px) {
+			font-size: 20px;
+			padding: 5px 0px;
+			border-bottom: .5px solid darkgray;
+			width: 100%;
+		}
 	}
 
 	.navs:hover {
